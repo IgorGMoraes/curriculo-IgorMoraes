@@ -132,7 +132,7 @@ header h3{
 }
 header h1{
 	font-size: 12vw;
-	color: black;
+	color: #141414;
 	font-weight: 700;
 }
 header h2{
@@ -257,6 +257,9 @@ header h2{
 	text-align: center;
 }
 .qItems{
+	-webkit-box-shadow: 0px 16px 23px -11px rgba(0,0,0,0.63);
+	-moz-box-shadow: 0px 16px 23px -11px rgba(0,0,0,0.63);
+		box-shadow: 0px 16px 23px -11px rgba(0,0,0,0.63);
 	padding: 0 7px 5px 7px;
 	display: block;
 	background: #f4f4f4;
@@ -293,7 +296,7 @@ hr {
 .experiencias{
 	height: 100vh;
     width: 100%;
-    background-image: url(../imagens/coverMinBike.png);
+    background-image: url(../imagens/exp-back.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -308,6 +311,9 @@ hr {
 	text-shadow: 1px 1px 2px gray;
 }
 
+.experiencias h3{
+	color: white;
+}
 
 /*CURIOSIDADES*/
 .curiosidades{

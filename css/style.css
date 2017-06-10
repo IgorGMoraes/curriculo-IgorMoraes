@@ -4,7 +4,7 @@
 }
 
 body {
-	overflow-x:hidden;
+	overflow-x: hidden;
 	font-family: 'Raleway', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
@@ -26,9 +26,7 @@ a:active {
 	text-decoration: none;
 }
 
-h1,
-h2,
-h4 {
+h1{
 	text-decoration:uppercase;
 }
 
@@ -43,18 +41,25 @@ p {
 
 /*NAVBAR*/
 .navbar-brand{
-	font-weight: 700;
-	font-size: 40px;
-	padding: 18px 0 0 0;
+	/*font-weight: 700;
+	font-size: 40px;*/
+	height: 60px;
+	padding:0;
 	margin:0 0 0 20px;
 }
-.navbar-default .navbar-toggle {
+.navbar-brand img{
+	height: 40px;
+	margin-top: 8px;
+}
+.navbar-default .navbar-toggle{
     border: none;
     margin: 20px 20px 0 0;
     -webkit-box-shadow: 0px 7px 30px -6px rgba(71,71,71,1);
 	-moz-box-shadow: 0px 7px 30px -6px rgba(71,71,71,1);
 	box-shadow: 0px 7px 30px -6px rgba(71,71,71,1);
 }
+
+
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus{
 	background-color: transparent;
@@ -72,30 +77,45 @@ p {
 }
 
 .nav li a{
-	font-size: 18px;
-	margin: 22px 0 0 20px;
-	padding: 0px 0 0 0;
-	padding-bottom: 0;
+	font-size: 22px;
+	letter-spacing: -.5px;
+	margin: 25px 0 0 20px;
+	padding: 0 0 5px 0;
 	text-align: center;
 }
+.navbar li a:hover{
+	transition: .1s;
+	border-bottom: 3px solid white;
+}
+
 .navbar-collapse{
 	border: none;
-	background: #0073cc;
 	padding-bottom: 20px;
 }
 
 .navbar{
-	background-color: #0073cc;
-	opacity: .8;
 	text-transform: uppercase;
 	font-weight: 500;
   	border: none;
   	height: 70px;
-  	-webkit-box-shadow: 0px 7px 30px -6px rgba(71,71,71,1);
-	-moz-box-shadow: 0px 7px 30px -6px rgba(71,71,71,1);
-	box-shadow: 0px 7px 30px -6px rgba(71,71,71,1);	
 }
-.navbar:hover{
+.navbar{
+	background-color: transparent;
+}
+.navbar.navStyle,
+.navbar-collapse.navStyle{
+	background-color: #0940CE;
+}
+
+.navbar.navStyle{
+	opacity: .8;
+	-webkit-box-shadow: 0px 7px 30px -6px rgba(71,71,71,1);
+	-moz-box-shadow: 0px 7px 30px -6px rgba(71,71,71,1);
+	box-shadow: 0px 7px 30px -6px rgba(71,71,71,1);
+	transition: 1s;
+}
+
+.navbar.navStyle:hover{
 	transition: .1s;
 	opacity: 1;
 }
@@ -104,20 +124,16 @@ p {
 	color: white !important;
 	margin: 7px 0 0 0;
 }
-.navbar a:hover{
-	transition: .1s;
-	border-bottom: 3px solid white;
-}
 
 
 
 /*HEADER*/
 header{
-	background: #0073cc; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#0073cc, #519fdb); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#0073cc, #519fdb); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#0073cc, #519fdb); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#0073cc, #519fdb); /* Standard syntax */
+	background: ##0940CE; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#0940CE, #0073cc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0940CE, #0073cc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0940CE, #0073cc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0940CE, #0073cc); /* Standard syntax */
 	height: 100vh;
 	width: 100%;
 	display: flex;
@@ -126,7 +142,14 @@ header{
 
 }
 
+header h2{
+	font-weight: 600;
+	font-size: 3vw;
+	color: white;
+}
+
 header h3{
+	font-style: bold;
 	color: white;
 	font-size: 2.5vw;
 }
@@ -134,10 +157,6 @@ header h1{
 	font-size: 12vw;
 	color: #141414;
 	font-weight: 700;
-}
-header h2{
-	font-size: 3vw;
-	color: black;
 }
 
 @media (max-width: 992px){
@@ -222,13 +241,13 @@ header h2{
 	margin-bottom: 100px;
 	text-shadow: 1px 1px 2px gray;
 }
-.objetivo h3{
-	color: white;
-	font-size: 4vh;
-}
 
 .texto-objetivo{
 	align-self: center;
+}
+.texto-objetivo p{
+	color: white;
+	font-size: 4vh;
 }
 
 /*QUALIFICAÇÕES*/
@@ -253,17 +272,19 @@ header h2{
 	text-shadow: 1px 1px 2px gray;
 }
 
+
 .qualificacoes .container{
 	text-align: center;
 }
 .qItems{
+	
 	-webkit-box-shadow: 0px 16px 23px -11px rgba(0,0,0,0.63);
 	-moz-box-shadow: 0px 16px 23px -11px rgba(0,0,0,0.63);
-		box-shadow: 0px 16px 23px -11px rgba(0,0,0,0.63);
+	box-shadow: 0px 16px 23px -11px rgba(0,0,0,0.63);
 	padding: 0 7px 5px 7px;
 	display: block;
 	background: #f4f4f4;
-	border-radius: 20px;
+	border-radius: 15px;
 	height: 350px;
 }
 .qualificacoes .icone{

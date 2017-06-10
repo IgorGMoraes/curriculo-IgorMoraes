@@ -30,3 +30,11 @@ $(function(){
 
 	});
 });
+
+$(function () {
+  $(document).scroll(function () {
+	  var $nav = $(".navbar");
+	  var $scroll = $(".sobre")
+	  $nav.toggleClass('navStyle', $(this).scrollTop() > $scroll.height());
+	});
+});

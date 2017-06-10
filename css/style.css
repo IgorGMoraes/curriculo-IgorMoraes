@@ -89,6 +89,7 @@ p {
 }
 
 .navbar-collapse{
+	background-color: #0944CE;
 	border: none;
 	padding-bottom: 20px;
 }
@@ -100,11 +101,11 @@ p {
   	height: 70px;
 }
 .navbar{
-	background-color: transparent;
+	background-color: #0944CE;
 }
 .navbar.navStyle,
 .navbar-collapse.navStyle{
-	background-color: #0940CE;
+	background-color: #0944CE;
 }
 
 .navbar.navStyle{
@@ -160,11 +161,14 @@ header h1{
 }
 
 @media (max-width: 992px){
-	header h3{
-		font-size: 4vw; 
+	header h2{
+		font-size: 6vw; 
 	}
 	header h1{
-		font-size: 14vw
+		font-size: 14.5vw
+	}
+	header h3{
+		font-size: 4vw; 
 	}
 }
 

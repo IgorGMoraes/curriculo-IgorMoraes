@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+	<link rel="shortcut icon" href="imagens/favicon.png"/>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +9,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,900" rel="stylesheet">
+	<link  href="css/jquery.fancybox.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
 	
 </head>
 <body>
@@ -15,21 +18,20 @@
 	<div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
 	    <div class="container">
 	        <div class="navbar-header">
+	            <a href="#" class="navbar-brand wow pulse"><img src="imagens/logo.png"></a>
 	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 	                <span class="icon-bar"></span>
 	                <span class="icon-bar"></span>
 	                <span class="icon-bar"></span>
 	            </button>
-	            
-	            <a href="#" class="navbar-brand"><img src="imagens/logo.png"></a>
 	        </div>
 	        <div class="navbar-collapse collapse">
 	            <ul class="nav navbar-nav navbar-right">
-					<li><a href="#sobre">Sobre</a></li>
-					<li><a href="#objetivo">Objetivo</a></li>
-					<li><a href="#qualificacoes">Qualificações</a></li>
-					<li><a href="#experiencias">Experiências</a></li>
-					<li><a href="#curiosidades">Curiosidades</a></li>
+					<li><a class="wow fadeInRight" href="#sobre">Sobre</a></li>
+					<li><a class="wow fadeInRight" data-wow-delay=".2s" href="#objetivo">Objetivo</a></li>
+					<li><a class="wow fadeInRight" data-wow-delay=".4s" href="#qualificacoes">Qualificações</a></li>
+					<li><a class="wow fadeInRight" data-wow-delay=".8s" href="#experiencias">Experiências</a></li>
+					<li><a class="wow fadeInRight" data-wow-delay="1s" href="#curiosidades">Curiosidades</a></li>
 	            </ul>
 	        </div>
 	    </div>
@@ -70,10 +72,11 @@
 	<section class="scroll objetivo" data-section-name="objetivo">
 		<h1 class="text-center">Objetivo</h1>
 		<div class="texto-objetivo col-lg-12 col-md-12">
-			<p class=" text-center">Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+			<p class=" text-center">Atuar no desenvolvimento de web sites responsivos, aplicativos móveis e design gráfico, utilizando Android Studio, ferramentas Adobe como Photoshop CC, Illustrator CC.
+			<br><br>
+			Interesse em desenvolvimento Front-End, Back-End, Android, Web Design</p>
 		</div>
 	</section>
-
 
 
 	<!--QUALIFICAÇÕES!-->
@@ -81,8 +84,9 @@
 		<h1 class="text-center">Qualificações</h1>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-md-3">			
-					<div class="cComp qItems">
+				<div class="col-lg-3 col-md-3">
+
+					<div class="cComp qItems wow flipInX" data-wow-delay="0s">
 						<img class="icone" src="imagens/ufla.png">
 						<hr>
 						<div class="itensDescr">
@@ -94,7 +98,7 @@
 				</div>
 
 				<div class="col-lg-3 col-md-3">					
-					<div class="ingles qItems">
+					<div class="ingles qItems wow flipInX" data-wow-delay=".2s">
 						<img class="icone" src="imagens/ingles.png">
 						<hr>
 						<div class="itensDescr">
@@ -106,7 +110,7 @@
 				</div>
 
 				<div class="col-lg-3 col-md-3">					
-					<div class="studyJ qItems">
+					<div class="studyJ qItems wow flipInX" data-wow-delay=".4s">
 						<img class="icone" src="imagens/android.png">
 						<hr>
 						<div class="itensDescr">
@@ -118,7 +122,7 @@
 				</div>
 				
 				<div class="col-lg-3 col-md-3">					
-					<div class="introHtmlCss qItems">
+					<div class="introHtmlCss qItems wow flipInX" data-wow-delay=".6s">
 						<img class="icone" src="imagens/web.png">
 						<hr>
 						<div class="itensDescr">
@@ -136,31 +140,103 @@
 	<!--EXPERIENCIAS-->
 	<section class="scroll experiencias" data-section-name="experiencias">
 		<h1 class="text-center">Experiências</h1>
-		<h3 class="text-center descricao">Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! In elementis mé pra quem é amistosis quis leo. Per aumento de cachacis, eu reclamis.</h3>
-		<div class="container-fluid">
-			<!-- <div class="row">
-				<img src="imagens/" class="col-lg-3 col-md-3"></img>
-				<img src="imagens/" class="col-lg-3 col-md-3"></img>
-				<img src="imagens/" class ="col-lg-3 col-md-3"></img>
-				<img src="imagens/" class="col-lg-3 col-md-3"></img>
-			</div> -->
+		<div class="col-md-6 col-lg-6" <style type="text/css" "margin:"></style>>
+			<h3 class="descricao">Desde 2013 atuo na empresa Mineiro Bike e Adventure no setor de criação e desenvolvimento do Marketing Digial. Algumas das contribuições foram na mudança no design e comunicação com clientes na página do Facebook e na loja no site OLX deixando-os mais profissionais, criação de promoções e banners para divulgação.
+			</h3>
+		</div>
+		
+		<div class="col-md-6 col-lg-6 col-sm-6 container" data-masonry='{ "itemSelector": ".expImg", "columnWidth": ".expImg" }'>
+			<a href="imagens/cover-mb.png" data-fancybox="loja">
+				<img src="imagens/thumb-cover-mb.png" class="col-lg-4 col-md-4 col-sm-12 expImg wow slideInLeft"></img>
+			</a>
+			<a href="imagens/promo-bike.png" data-fancybox="loja">
+				<img src="imagens/thumb-promo-bike.png" class="col-lg-4 col-md-4 col-sm-12 expImg wow slideInUp"></img>
+			</a>
+			<a href="imagens/promo-voo.jpg" data-fancybox="loja">
+				<img src="imagens/thumb-promo-voo.jpg" class ="col-lg-4 col-md-4 col-sm-12 expImg wow slideInDown"></img>
+			</a>
+			<a href="imagens/natal.jpg"" data-fancybox="loja">
+				<img src="imagens/thumb-natal.jpg" class="col-lg-4 col-md-4 col-sm-12 expImg wow slideInRight"></img>
+			</a>
 		</div>
 	</section>
 
 
 	<!--CURIOSIDADES-->
 	<section class="scroll curiosidades" data-section-name="curiosidades">
-	<h1 class="text-center">Curiosidades</h1>
-		<div class="col-lg-6 ol-md-6">
-		</div>
-		<div class="col-lg-6 ol-md-6 desenho">
+		<h1 class="text-center">Curiosidades</h1>
+		<div class="container-fluid" >
+
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 wrapper">
+				<div class="hobby cozinhar wow zoomIn">
+					<h3 class="text-center">Cozinhar</h3>	
+				</div>
+				<div class="hobby esporte wow zoomIn">
+					<h3 class="text-center">Esportes</h3>	
+				</div>
+			</div>
+			
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 wrapper">
+				<a href="imagens/house.jpg" data-fancybox="desenho">
+					<div class="hobby desenhar wow zoomIn">
+						<h3 class="text-center">Desenhar</h3>
+						<span>Clique e veja alguns dos meus desenhos!</span>
+						<div class="hidden">
+							<img src="imagens/brbd.jpg" data-fancybox="desenho">
+							<img src="imagens/olho.jpg" data-fancybox="desenho">
+							<img src="imagens/ac.jpg" data-fancybox="desenho">
+							<img src="imagens/mustang.jpg" data-fancybox="desenho">
+						</div>
+							
+					</div>
+				</a>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 wrapper">
+				
+				<div class="hobby musica wow zoomIn">
+					<h3 class="text-center">Música</h3>
+				</div>
+				<div class="hobby video wow zoomIn">
+					<h3 class="text-center">Filmes e Séries</h3>	
+				</div>
+				<div class="hobby jogar wow zoomIn">
+					<h3 class="text-center">Jogos</h3>
+				</div>
+
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 wrapper">
+				<div class="hobby amigos wow zoomIn">
+					<h3 class="text-center">Amigos</h3>
+				</div>
+				<div class="hobby viajar wow zoomIn">
+					<h3 class="text-center">Viajar</h3>	
+				</div>
+			</div>
 		</div>
 	</section>
 
 	<footer data-section-name="footer">
-		<row class="col-lg-6 col-md-6"></row>
-		FOOTER
-		<row class="col-lg-6 col-md-6"></row>
+		<div class="col-lg-12 col-md-12 tafBackg" >
+			<img src="imagens/taf.png" class="taf wow zoomIn">
+		</div>
+
+		<div class="text-center"><a href="mailto:igorgomesmoraes@gmail.com" class="email">igorgomesmoraes@gmail.com</a></div>
+		<h3 class=" fone text-center">(35) 9.9891-6572</h3>
+
+		<div class="socialMedia">
+			<a href="https://www.facebook.com/IgorGMoraes" onclick="JavaScript: window.open(this.href); return false;"><img src="imagens/facebook.png" class="iconSocial wow pulse" data-wow-delay=".5s"></img>
+			</a>
+			<a href="http://instagram.com/igorgm" onclick="JavaScript: window.open(this.href); return false;"><img src="imagens/instagram.png" class="iconSocial wow pulse" data-wow-delay=".5s"></img>
+			</a>
+
+			<a href="https://www.linkedin.com/in/IgorGMoraes/"onclick="JavaScript: window.open(this.href); return false;"><img src="imagens/linkedin.png" class="iconSocial wow pulse" data-wow-delay=".5s"></img>
+			</a>
+		</div>
+		<hr>
+		<h4 class="text-center">Lavras/MG</h4>
+
 	</footer>
 
 
@@ -173,6 +249,14 @@
 	<script src="js/bootstrap.min.js"></script>
 	<!-- <script src="https://alvarotrigo.com/fullPage/jquery.fullPage.min.js"</script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.14/jquery.scrollify.min.js"></script>
+	<!-- Fancybox -->
+	<script src="js/jquery.fancybox.min.js"></script>
+	<!-- wow -->
+	<script src="http://mynameismatthieu.com/WOW/dist/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 	<script src="js/main.js"></script>
+	<script src="https://masonry.desandro.com/js/masonry-docs.min.js" ></script>
 </body>
 </html>

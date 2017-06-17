@@ -1,6 +1,6 @@
 * {
 	padding: 0;
-	margin: 0px;
+	margin: 0px; 
 }
 
 body {
@@ -10,6 +10,7 @@ body {
 	-webkit-font-smoothing: antialiased !important;
 }
 
+}
 li {
 	list-style: none;
 	display: inline-block
@@ -41,8 +42,6 @@ p {
 
 /*NAVBAR*/
 .navbar-brand{
-	/*font-weight: 700;
-	font-size: 40px;*/
 	height: 60px;
 	padding:0;
 	margin:0 0 0 20px;
@@ -131,16 +130,14 @@ p {
 /*HEADER*/
 header{
 	background: ##0940CE; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#0940CE, #0073cc); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#0940CE, #0073cc); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#0940CE, #0073cc); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#0940CE, #0073cc); /* Standard syntax */
+    background: -webkit-linear-gradient(#0940CE, #007ad8); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0940CE, #007ad8); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0940CE, #007ad8); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0940CE, #007ad8); /* Standard syntax */
 	height: 100vh;
 	width: 100%;
 	display: flex;
     align-items: center;
-    padding-bottom: 0px;
-
 }
 
 header h2{
@@ -156,7 +153,7 @@ header h3{
 }
 header h1{
 	font-size: 12vw;
-	color: #141414;
+	color: #181818;
 	font-weight: 700;
 }
 
@@ -246,10 +243,8 @@ header h1{
 	text-shadow: 1px 1px 2px gray;
 }
 
-.texto-objetivo{
-	align-self: center;
-}
 .texto-objetivo p{
+	line-height: 40px;
 	color: white;
 	font-size: 4vh;
 }
@@ -281,12 +276,10 @@ header h1{
 	text-align: center;
 }
 .qItems{
-	
 	-webkit-box-shadow: 0px 16px 23px -11px rgba(0,0,0,0.63);
 	-moz-box-shadow: 0px 16px 23px -11px rgba(0,0,0,0.63);
 	box-shadow: 0px 16px 23px -11px rgba(0,0,0,0.63);
 	padding: 0 7px 5px 7px;
-	display: block;
 	background: #f4f4f4;
 	border-radius: 15px;
 	height: 350px;
@@ -295,9 +288,9 @@ header h1{
 	margin-top: 10px;
 }
 
-hr {
+.qualificacoes hr {
   	border:none;
- 	width: 90%;
+ 	width: 100%;
 	height: 55px;
 	box-shadow: 0 20px 20px -25px gray;
   	margin: -40px auto 30px auto; 
@@ -336,30 +329,198 @@ hr {
 	text-shadow: 1px 1px 2px gray;
 }
 
+.expImg{
+	margin: 15px auto 15px auto;
+}
+
+.experiencias .container{
+	margin: 0 auto;
+}
 .experiencias h3{
+	line-height: 40px;
 	color: white;
+	margin: 0;
+}
+
+@media (max-width: 768px){
+	.experiencias{
+		height: 100%;
+	}
 }
 
 /*CURIOSIDADES*/
 .curiosidades{
 	height: 100vh;
 	width: 100%;
-	background-image: url(../imagens/desenho.jpg);
-	background-position: center 40%;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-image: url(../imagens/cur-back.png);
+	background-size: 770px;
+
 }
+
 .curiosidades h1{
 	font-weight: 700;
-	color: white;
+	color: black;
 	text-transform: uppercase;
 	font-size: 6vh;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 	text-shadow: 1px 1px 2px gray;
 }
 
-.desenho{
-	height: 100vh;
-	width: 50%;
+.wrapper{
+	height: 590px;
+}
+
+.hobby{
+	color: white;
+	vertical-align: 
+	width: 100%;
+	padding: 15px 10px 15px 10px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+}
+
+.cozinhar{
+	height: 35%;
+	background-image: url(../imagens/carne.jpeg);
+	background-size: cover;
+}
+.curiosidades .item:hover .overlay-cozinhar{
+	opacity: 1;
+}
+.esporte{
+	height: 35%;
+	background-image: url(../imagens/bike.jpg);
+	background-size: cover;
+	background-position: 0% 20%;
+}
+.desenhar{
+	height: 75%;
+	background-image: url(../imagens/house.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.musica{
+	height: 21.5%;
+	background-image: url(../imagens/musica.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.video{
+	height: 21.5%;
+	background-image: url(../imagens/movie.jpg);
+	background-size: cover;
+}
+.jogar{
+	height: 21.5%;
+	background-image: url(../imagens/game.jpeg);
+	background-size: cover;
+	background-position: bottom;
+}
+.amigos{
+	height: 35%;
+	background-image: url(../imagens/amigos.jpg);
+	background-size: cover;
+	background-position: 0% 10%;
+}
+.viajar{
+	height: 35%;
+	background-image: url(../imagens/viagem.jpg);
+	background-size: cover;
+}
+
+.curiosidades span{
+	color: black;
+	text-align: center;
+	position: absolute;
+	bottom: 30%;
+}
+@media (max-width: 768px){
+	.curiosidades{
+		height: 100%;
+	}
+
+}
+/*FOOTER*/
+footer{
+	float: left;
+	background-color: ##0940CE; 
+    background: -webkit-linear-gradient(#007ad8, #00288e); 
+    background: -o-linear-gradient(#007ad8, #00288e); 
+    background: -moz-linear-gradient(#007ad8, #00288e); 
+    background: linear-gradient(#007ad8, #00288e); 
+    height: 100vh;
+	width: 100%;
+}
+
+.tafBackg{
+	background-color: white;
+	padding-bottom: 10px;
+	margin-bottom: 100px;
+}
+.taf{
+	width: 35vw;
+	padding-top: 90px;
+	display: block;
+	margin: 0 auto;
+}
+
+.email{
+	font-weight: 600;
+	color: #0940CE;
+	font-size: 30px;
+	background-color: white;
+	border-radius: 12px;
+	padding: 5px 10px;
+}
+
+footer .text-center{
+	color: white;
+}
+
+.socialMedia{
+	margin: 70px auto 50px auto;
+	text-align: center;
+}
+
+.iconSocial{
+	height: 65px;
+	width: 65px;
+	margin: 10px;
+	border: 3px solid white;
+	padding: 10px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 15px 4px rgba(0,0,0,0.25);
+}
+.iconSocial:active{
+	transition: .2s;
+	box-shadow: none;
+}
+
+footer hr{
+	margin: 0 auto 10px auto;
+	width: 70%;
+	opacity: .7;
+}
+
+@media (max-width: 768px){
+	.taf{
+		width: 20vw;
+	}
+	.email{
+		font-size: 10px;
+	}
 	
+	.fone{
+		font-size: 5px;
+	}
+	.iconSocial{
+		height: 40px;
+		width: 40px;
+		border: 2px solid white;
+	}
+	
+	.socialMedia{
+		margin: 150px auto 0 auto;
+	}
+
 }
